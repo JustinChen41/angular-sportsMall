@@ -1,0 +1,47 @@
+<!-- MAIN CONTENT -->
+<div id="content">
+  <section id="widget-grid" class="">
+    <div class="row">
+      <article class="col-sm-12">
+        <!-- NEW WIDGET START -->
+        <div class="jarviswidget" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+          <div class="widget-body">
+            <a href="" class="btn btn-primary btn-sm pull-right">新增区域</a>
+            <h1 class="page-title txt-color-blueDark" style="text-indent:10px;"><span>区域管理</span></h1>
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th>#</th><th>球队中文名</th><th>球队英文名</th><th>球队所在地</th><th>操作</th>
+              </tr>
+              </thead>
+
+              <tbody>
+                <tr *ngFor="let team of teamList">
+                  <td>{{team.teamId}}</td>
+                  <td>{{team.teamChineseName}}</td>
+                  <td>{{team.teamEnglishName}}</td>
+                  <td>{{team.teamAddress}}</td>
+                  <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                      <a href="" class="btn btn-primary btn-sm"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                      <a href="" class="btn btn-danger btn-sm" onclick="return confirm('是否删除区域板块？')"><span class="am-icon-trash-o"></span> 删除</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="form-actions">
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="button" class="btn btn-default" value="返回" onclick="javascript:history.go(-1)"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- WIDGET END -->
+      </article>
+    </div>
+    <!-- end row -->
+  </section>
+</div>

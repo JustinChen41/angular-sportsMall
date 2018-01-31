@@ -1,0 +1,32 @@
+export class Team {
+  // 主键ID
+  teamId: number;
+  // 球队中文名称
+  teamChineseName: string;
+  // 球队英文名称
+  teamEnglishName: string;
+  // 球队地址
+  teamAddress: string;
+  // 球队老板
+  teamBoss: string;
+  // 球队教练
+  teamCoach: string;
+  // 球队介绍
+  teamDescription: string;
+  // 所属赛事
+  teamAssociation: string;
+  // 主场名称
+  teamHomeCourt: string;
+  // 创建时间
+  teamFoundTime: string;
+  // 主要荣誉
+  teamHonor: string;
+  // 球队wiki地址
+  teamWikiUrl: string;
+  // 球队logo
+  teamLogo: string;
+  // 创建时间
+  createTime: number;
+  // 更新时间
+  lastEditTime: number;
+}

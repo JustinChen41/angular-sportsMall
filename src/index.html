@@ -1,14 +1,68 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>AngularSportsMall</title>
+  <title>体育商城管理平台</title>
   <base href="/">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Basic Styles -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/font-awesome.min.css">
+
+  <!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/smartadmin-production.css">
+  <script src="../assets/js/libs/jquery-2.0.2.min.js"></script>
+  <script src="../assets/js/libs/jquery-ui-1.10.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/custom-style.css">
 </head>
-<body>
-  <app-root></app-root>
+<body class="">
+<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+<!-- HEADER -->
+<header id="header">
+  <div id="logo-group">
+    <!-- PLACE YOUR LOGO HERE -->
+    <span> <img src="../assets/images/logo.png"> <h4><a href="">煤炭江湖管理平台</a></h4></span>
+  </div>
+  <!-- end projects dropdown -->
+
+  <!-- pulled right: nav area -->
+  <div class="pull-right">
+
+    <!-- collapse menu button -->
+    <div id="hide-menu" class="btn-header pull-right">
+      <span>
+          <a href="javascript:void(0);" title="Collapse Menu">
+              <i class="fa fa-reorder"></i>
+          </a>
+      </span>
+    </div>
+    <!-- end collapse menu -->
+    <!-- logout button -->
+    <div id="logout" class="btn-header transparent pull-right">
+      <span>
+        <p style="font-size:16px;float:right;padding-top:13px;margin-right: -10px;color: #fff;">菜单-></p>
+      </span>
+    </div>
+    <!-- end logout button -->
+  </div>
+  <!-- end pulled right: nav area -->
+
+</header>
+<!-- END HEADER -->
+<app-root></app-root>
+<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+Note: These tiles are completely responsive,
+you can add as many as you like
+-->
 </body>
+<!--================================================== -->
+<!-- BOOTSTRAP JS -->
+<script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+<!-- MAIN APP JS FILE -->
+<script src="../assets/js/app.js"></script>
+<!-- PAGE RELATED PLUGIN(S) -->
 </html>
